@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="zdsum">
+        <item>阿克苏</item>
+        <item>阿勒泰</item>
+        <item>博乐市</item>
+        <item>昌吉回族自治州</item>
+        <item>和田</item>
+        <item>河北山西甘肃</item>
+        <item>湖北</item>
+        <item>喀什</item>
+        <item>库车市</item>
+        <item>库尔勒市</item>
+
+        <item>内蒙古东北</item>
+        <item>全部</item>
+        <item>上海测试</item>
+        <item>石河子</item>
+        <item>塔城</item>
+        <item>伊犁</item>
+
+
+    </string-array>
+
+
+</resources>

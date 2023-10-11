@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/border"
+    android:layout_height="65dp">
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:gravity="center_vertical|start"
+        android:padding="10dp"
+        android:text="InfoWindow"
+        android:inputType="textMultiLine"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <ImageView
+
+        android:id="@+id/daohan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+
+        android:layout_toRightOf="@+id/info_text"
+
+
+        android:src="@drawable/daohan" />
+
+</RelativeLayout>

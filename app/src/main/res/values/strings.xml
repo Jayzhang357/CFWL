@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">差分宝</string>
+    <string name="Version" translatable="false">CFBV1.0.0T15</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="prompt_email">账号</string>
+    <string name="prompt_password">密码</string>】
+    <string name="renew">刷新</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="progress_wait" translatable="false">正在获取源节点...</string>
+    <string name="progress_login" translatable="false">正在登录...</string>
+    <string name="option" translatable="false">提示</string>
+</resources>

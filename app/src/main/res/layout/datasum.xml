@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iback1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/iback" />
+
+            <ImageView
+                android:id="@+id/irefesh1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iback1"
+                android:src="@drawable/irefesh" />
+
+            <EditText
+                android:id="@+id/edittext1"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:hint="请输入想要搜索的站点"
+                android:background="@drawable/edit_background"
+                android:maxLength="10"
+
+                android:singleLine="true"
+
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="60dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/delete"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/isearch1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/isearch" />
+
+        </RelativeLayout>
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#cccccc"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="编号"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="接入点"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="基站名称"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="连接数"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="固定解"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="浮点解"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="差分解"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="非差分定位"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="未定位"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/n2"
+            android:layout_height="190dp">
+
+            <ListView
+                android:id="@+id/projectgd1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:cacheColorHint="#00000000"
+                android:columnWidth="600dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:focusable="true"
+                android:scrollingCache="false">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iback"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/iback" />
+
+
+            <ImageView
+                android:id="@+id/irefesh"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iback"
+                android:src="@drawable/irefesh" />
+
+
+
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:hint="请输入想要搜索的站点"
+                android:background="@drawable/edit_background"
+                android:maxLength="10"
+
+                android:singleLine="true"
+
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="60dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/delete"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/isearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/isearch" />
+
+        </RelativeLayout>
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#cccccc"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="编号"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/zdname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="基站名称"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="经度"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="纬度"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="电台频率"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="IP地址"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="端口"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="挂载点"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="密码"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/qy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="区域"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="管理者"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/n1"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <ListView
+                android:id="@+id/projectgd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:cacheColorHint="#00000000"
+                android:columnWidth="600dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:focusable="true"
+                android:scrollingCache="false">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <WebView
+            android:id="@+id/web1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <WebView
+            android:id="@+id/web2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/jzxx"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_button_g"
+            android:text="基站信息"
+            android:textColor="@color/green" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/jzzt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_button_r"
+            android:text="基站状态"
+            android:textColor="@color/red" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/cos"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_button_r"
+            android:text="cors服务器登录"
+            android:textSize="14sp"
+            android:textColor="@color/red" />
+
+        <Button
+            android:id="@+id/hn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_button_r"
+            android:text="惠农管理平台登录"
+            android:textSize="14sp"
+            android:textColor="@color/red" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
